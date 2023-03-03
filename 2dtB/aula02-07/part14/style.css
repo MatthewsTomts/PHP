@@ -1,0 +1,8 @@
+fieldset {
+    position: absolute;
+    top: calc(50vh - 267px);
+    left: calc(50vw - 216px);
+
+    width: 400px;
+    padding-top: 6px;
+}
