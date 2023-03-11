@@ -10,4 +10,3 @@ function conferir() {
 		document.getElementById('enviar').disabled = true;
 	}
 }
-
