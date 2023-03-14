@@ -30,7 +30,7 @@ include_once($connRoute);
     $pagina = (!empty($pagina_atual)) ? $pagina_atual : 1;
 
     // Setar a quantidade de items por pagina
-    $qnt_result_pg = 1;
+    $qnt_result_pg = 5;
 
     // Calcular o inicio visualização
     $inicio = ($qnt_result_pg * $pagina) - $qnt_result_pg;

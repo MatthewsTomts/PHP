@@ -28,10 +28,12 @@ include_once("../rota.php");
         <input type="email" name="login" required><br><br>
 
         <label for="senha">Senha: </label>
-        <input type="password" name="senha" required><br><br>
+        <input type="password" name="senha" required>
+        <input type="button" value="Mostrar senha" onclick="view()"><br><br>
 
         <input type="submit" value="Enviar">
     </form>
+    <script src="<?php echo $scriptRoute; ?>"></script>
 </body>
 
 </html>

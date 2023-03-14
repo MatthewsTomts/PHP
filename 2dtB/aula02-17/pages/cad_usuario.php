@@ -44,7 +44,7 @@ include_once("../rota.php");
 
         <input type="submit" value="Enviar" id="enviar" disabled>
     </form>
-    <script src="logica/script.js"></script>
+    <script src="<?php echo $scriptRoute; ?>"></script>
 </body>
 
 </html>

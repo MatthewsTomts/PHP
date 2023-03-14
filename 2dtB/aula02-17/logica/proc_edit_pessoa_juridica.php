@@ -11,6 +11,7 @@ $num = htmlspecialchars($_POST['num']);
 $bairro = htmlspecialchars($_POST['bairro']);
 $cid = htmlspecialchars($_POST['cid']);
 $uf = htmlspecialchars($_POST['uf']);
+$cep = str_replace('-', '', $cep);
 
 $result_usuario = "UPDATE cnpj SET nome_empresa = '$emp', cep = '$cep',
 logradouro = '$log', numero = '$num', bairro = '$bairro', cidade = '$cid', uf = '$uf' WHERE id='$id'";

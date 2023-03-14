@@ -1,11 +1,13 @@
 <?php
-$root = "http://" . $_SERVER['SERVER_NAME'] . ":" . $_SERVER['SERVER_PORT'] . "/";
+$root = "http://" . $_SERVER['SERVER_NAME'] . ":" . $_SERVER['SERVER_PORT'] . "/pagMatheus/";
 $rootLogica = $root . "logica/";
 $rootPage = $root . "pages/";
-$connRoute = $_SERVER['DOCUMENT_ROOT'] . '/logica/conexao.php';
+$connRoute = $_SERVER['DOCUMENT_ROOT'] . '/pagMatheus/logica/conexao.php';
 
 $procLoginRoute = $rootLogica . "proc_login.php";
 $formRoute = $rootPage . "form_opc.php";
+$scriptRoute = $rootLogica . "script.js";
+$cepRoute = $rootLogica . "cep.js";
 
 $indexRoute = $root . "index.php";
 $cadUserRoute = $rootPage . "cad_usuario.php";

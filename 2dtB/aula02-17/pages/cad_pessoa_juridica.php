@@ -34,25 +34,26 @@ include_once("../rota.php");
         <input type="text" name="emp" required><br><br>
 
         <label for="cep">CEP: </label>
-        <input type="text" name="cep" placeholder="XXXXX-XXX" pattern="\d{5}[-]?\d{3}" required><br><br>
+        <input type="text" name="cep" placeholder="XXXXX-XXX" pattern="\d{5}[-]?\d{3}" onblur="pesquisacep(this.value);" required><br><br>
 
         <label for="log">Logradouro: </label>
-        <input type="text" name="log" required placeholder="Rua / Avenida / Travessa"><br><br>
+        <input type="text" name="log" required placeholder="Rua / Avenida / Travessa" disabled><br><br>
 
         <label for="num">Número: </label>
         <input type="text" pattern="\d{1,5}" name="num" required placeholder="Máx. 5 digitos"><br><br>
 
         <label for="bairro">Bairro: </label>
-        <input type="text" name="bairro" required placeholder="Limoeiro"><br><br>
+        <input type="text" name="bairro" required placeholder="Limoeiro" disabled><br><br>
 
         <label for="cid">Cidade: </label>
-        <input type="text" name="cid" required><br><br>
+        <input type="text" name="cid" required placeholder="Jardim" disabled><br><br>
 
         <label for="uf">UF: </label>
-        <input type="text" pattern="[A-Z]{2}" name="uf" placeholder="SP" required><br><br>
+        <input type="text" pattern="[A-Z]{2}" name="uf" placeholder="SP" required disabled><br><br>
 
         <input type="submit" value="Enviar" id="enviar">
     </form>
+    <script src="<?php echo $cepRoute; ?>"></script>
 </body>
 
 </html>

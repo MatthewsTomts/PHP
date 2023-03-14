@@ -10,3 +10,12 @@ function conferir() {
 		document.getElementById('enviar').disabled = true;
 	}
 }
+
+function view() {
+     senha = document.getElementsByName('senha')[0]
+     if (senha.type == 'text') {
+          senha.type = 'password'
+     } else {
+          senha.type = 'text'
+     }
+}
